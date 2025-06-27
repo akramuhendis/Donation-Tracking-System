@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DonationTrackingSystem.Domain.Entities
+{
+    /// <summary>
+    /// Bağış yapan kişilerin bilgilerini tutan sınıf
+    /// </summary>
+    public class Bagisci : BaseEntity
+    {
+        /// <summary>
+        /// Bağışçının ad ve soyad bilgisi
+        /// </summary>
+        [Required, MaxLength(100)]
+        public string AdSoyad { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Bağışçının iletişim için telefon numarası
+        /// </summary>
+        [Phone]
+        public string Telefon { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Bağışçının e-posta adresi
+        /// </summary>
+        [EmailAddress]
+        public string Eposta { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Bağışçının yapmış olduğu bağışların listesi
+        /// Null olabilir çünkü yeni kayıt olan bir bağışçının henüz bağışı olmayabilir
+        /// </summary>
+        public ICollection<Bagis>? Bagislar { get; set; }
+    }
+}

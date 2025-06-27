@@ -1,0 +1,71 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "DonationTrackingSystem.Infrastructure/1.0.0": {
+        "dependencies": {
+          "DonationTrackingSystem.Application": "1.0.0",
+          "DonationTrackingSystem.Domain": "1.0.0",
+          "DonationTrackingSystem.Shared": "1.0.0"
+        },
+        "runtime": {
+          "DonationTrackingSystem.Infrastructure.dll": {}
+        }
+      },
+      "DonationTrackingSystem.Application/1.0.0": {
+        "dependencies": {
+          "DonationTrackingSystem.Domain": "1.0.0",
+          "DonationTrackingSystem.Shared": "1.0.0"
+        },
+        "runtime": {
+          "DonationTrackingSystem.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DonationTrackingSystem.Domain/1.0.0": {
+        "runtime": {
+          "DonationTrackingSystem.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DonationTrackingSystem.Shared/1.0.0": {
+        "runtime": {
+          "DonationTrackingSystem.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DonationTrackingSystem.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DonationTrackingSystem.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DonationTrackingSystem.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DonationTrackingSystem.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
